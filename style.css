@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,  sans-serif;
+}
+body{
+    background-color: #0f172a;
+    color: white;
+    min-height: 100vh;
+
+}
+.navbar{
+    margin-bottom: 40px;    
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 1.1rem;
+    color: #cbd5f5;
+}
+
+/* cards coding */
+.card{
+    background-color: #020617 !important;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card h4{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.card p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Tasks Section Box */
+.task-box {
+    background-color: #020617;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Task list styling */
+.list-group-item {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #1e293b;
+    padding: 12px 8px;
+}
+
+/* Input field look */
+.task-box input {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    color: white;
+}
+
+.task-box input::placeholder {
+    color: #94a3b8;
+}
+
+/* Button spacing fix */
+.task-box button {
+    white-space: nowrap;
+}
+
+
+/* Student section styles  */
+.student-box {
+    background-color: #020617;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: white;
+}
+
+/* Form controls inside student-box */
+.student-box .form-control,
+.student-box .form-select {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    color: white;
+    height: 44px;
+}
+
+.student-box .form-control::placeholder,
+.student-box .form-select option[disabled] {
+    color: #94a3b8;
+}
+
+/* Make the add button align nicely on small screens */
+.student-box .btn {
+    height: 44px;
+    padding: 0 14px;
+}
+
+/* Table styling for dark theme */
+.student-box .table {
+    color: white;
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.student-box .table thead th {
+    border-bottom: 1px solid #1e293b;
+    color: #e6eef8;
+    font-weight: 600;
+    background: transparent;
+}
+
+.student-box .table tbody tr {
+    border-bottom: 1px solid #1e293b;
+}
+
+.student-box .table tbody td,
+.student-box .table tbody th {
+    vertical-align: middle;
+    color: #dbe7ff;
+    background: transparent;
+}
+
+/* Action buttons look */
+.student-box .btn-outline-light {
+    color: #e6eef8;
+    border-color: rgba(230,238,248,0.12);
+    background: transparent;
+}
+
+.student-box .btn-outline-light:disabled {
+    opacity: 0.6;
+}
+
+.student-box .btn-outline-danger {
+    color: #ffdddd;
+    border-color: rgba(255, 100, 100, 0.12);
+}
+
+/* Small spacing & responsive tweaks */
+@media (max-width: 767.98px) {
+    .student-box .align-items-end > .col-md-6.text-md-end {
+        text-align: left !important;
+        margin-top: 8px;
+    }
+}
+
+/* Optional: 
+.student-box .table tbody tr:hover {
+    background: rgba(255,255,255,0.02);
+}
+
+
+/* -----------------------------------------
+   TASKS SECTION (Polished Dark Theme)
+------------------------------------------ */
+
+/* Outer box look */
+.task-box {
+    max-width: 900px;
+    margin: auto;
+    background-color: #020617;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: white;
+}
+
+
+/* Input + Button */
+.task-box input {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    color: white;
+    height: 44px;
+    transition: 0.2s ease;
+}
+
+.task-box input::placeholder {
+    color: #94a3b8;
+}
+
+.task-box input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
+}
+
+
+/* Add Task Button */
+.task-box button {
+    height: 44px;
+    padding: 0 16px;
+    border-radius: 6px;
+    transition: 0.25s ease;
+    white-space: nowrap;
+}
+
+.task-box button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Task list items */
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #1e293b;
+    padding: 12px 10px;
+    color: #d1defa;
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+/* Subtle hover highlight */
+.list-group-item:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+/* Checkbox icon alignment */
+.list-group-item::before {
+    font-size: 1.1rem;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* Spacing between sections */
+.task-box h2 {
+    color: #e6eef8;
+}
