@@ -1,3 +1,7 @@
+Live Demo :- https://rehanmansuri1.github.io/Smart_Student_Dashboard/
+
+
+
 # Smart Student Dashboard
 
 A simple frontend project made using HTML, CSS, Bootstrap and JavaScript.
